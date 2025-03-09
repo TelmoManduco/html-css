@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem flexivel</title>
+</head>
+<body>
+    <h1>Imagem Flexivel</h1>
+    <p>Voce esta vendo a imagem completa? Experimente ampliar o tamanho da sua janela para aproveitar a melhor experiencia &#x1F61C</p>
+    <picture>
+        <!-- Enquanto a imagem for <= a 500px ele vai usar a paisagem-p -->
+        <source media="(max-width: 500px)" srcset="imagens/paisagem-p.png" type="image/png">
+        <!-- Enquanto a imagem for <= a 1000px ele vai usar a paisagem-m -->
+        <source media="(max-width: 1000px)" srcset="imagens/paisagem-m.png" type="image/png">
+        <img src="imagens/paisagem-g.png" alt="Imagem flexível">
+    </picture>
+</body>
+</html>

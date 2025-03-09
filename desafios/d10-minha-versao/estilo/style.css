@@ -1,0 +1,144 @@
+@charset "UTF-8";
+ * {
+    margin: 0px;
+    padding: 0px;
+ }
+
+ @import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
+
+ @font-face {
+    font-family: 'Anime';
+    src: url('../fontes/animefonte.otf') format('opentype');
+ }
+
+:root {
+    --fonte01: Arial, Helvetica, sans-serif;
+    --fonte02: 'Anime', Arial, Helvetica, sans-serif;
+    --fonte03: 'Sigmar', Arial, Helvetica, sans-serif;
+    /*Cores*/
+    --cor01: #90c2e7;
+    --cor02: #4e8098;
+    --cor03: #00a9a5;
+    --cor04: #0b5351;
+    --cor05: #092327;
+}
+
+body {
+    background-color: var(--cor05);
+    font-family: var(--fonte01);
+    color: white;
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor02), var(--cor05));
+    padding: 30px;
+    text-align: center;
+}
+
+header > h1 {
+    color: white;
+    font-family: var(--fonte02);
+    font-weight: bold;
+    font-size: 4em;
+}
+
+nav {
+    background-color: var(--cor05);
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+nav > a {
+    font-family: var(--fonte02);
+    font-weight: normal;
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+    margin-right: 30px;
+    padding: 1px;
+}
+
+nav > a:hover {
+    color: var(--cor01);
+    background-color: var(--cor05);
+}
+
+main {
+    min-width: 400px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: var(--cor04);
+}
+
+main > section.historia > h2 {
+   font-family: var(--fonte03); 
+   color: var(--cor01);
+   font-weight: bold;
+   margin-bottom: 30px;
+   text-align: center;
+   padding-top: 20px;
+}
+
+main > section.lista > h2 {
+    font-family: var(--fonte01);
+    color: var(--cor01);
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+main > section.lista > ol {
+    text-align: center;
+    padding-left: 0px;
+    list-style-position: inside;
+    font-family: var(--fonte01);
+    font-size: 2em;
+    
+}
+
+main > section.lista img {
+    margin-top: 5px;
+}
+
+p {
+    text-align: justify;
+    margin: 0px 20px;
+    line-height: 1.5;
+}
+
+img {
+    display: block;
+    margin: 40px auto;
+    width: 90%;
+}
+
+footer {
+    background-color: var(--cor04);
+    padding: 7px;
+}
+
+footer > p {
+    text-align: center;
+    font-family: var(--fonte03);
+}
+
+footer a {
+    color: var(--cor01);
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+footer a:hover {
+    background-color: aqua;
+    color: black;
+}
+
+footer a::before {
+    content: '\21DB   ';
+}
+
+footer a::after {
+    content: '   \21DA';
+}
+
