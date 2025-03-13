@@ -8,7 +8,7 @@
 
 :root {
     --fonte01: "Passion One", sans-serif;
-    --fonte02: Verdana, sans-serif;
+    --fonte02: Verdana, Geneva, Tahoma, sans-serif;
     --fonte03: 'Sriracha', sans-serif;
 }
 
@@ -20,6 +20,7 @@
 html, body {
     background-color: darkgray;
     min-height: 100vh;
+    font-family: var(--fonte02);
 }
 
 header {
@@ -58,6 +59,8 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte03);
+    font-size: 3.5vw;
 }
 
 section.normal {
@@ -72,7 +75,8 @@ section.imagem {
 
 section.imagem > p {
     background-color: black;
-    width: 400px;
+    display: inline-block;
+    padding: 10px;
 }
 
 footer {
