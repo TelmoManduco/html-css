@@ -3,104 +3,120 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>desafio 14</title>
+    <title>Exercisios de Tabelas</title>
     <style>
       body {
         font-family: Arial, Helvetica, sans-serif;
       }
 
-      table {
-        border-collapse: collapse;
-        text-align: center;
+      caption {
+        margin-bottom: 10px;
       }
 
-      caption {
-        padding: 20px;
-        font-weight: bold;
+      table {
+        width: 500px;
+        border-collapse: collapse;
+        text-align: center;
       }
 
       th,
       td {
         border: 1px solid black;
-        padding: 5px;
+        padding: 10px;
       }
 
-      th {
-        background-color: gray;
-        color: white;
+      .cnome {
+        background-color: chartreuse;
       }
 
-      th.branco {
-        background-color: white;
-        color: black;
+      .cgrupo {
+        background-color: red;
       }
+
     </style>
   </head>
   <body>
+    <h1>Exercisio de Tabela</h1>
     <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="cgrupo" span="3">
+        </colgroup>
       <caption>
-        Desafio 14
+        Cadastro
       </caption>
-      <thead>
-        <tr>
-          <th rowspan="2" scope="row">Area</th>
-          <th rowspan="2" scope="rowgroup">Disciplinas</th>
-          <th colspan="2" scope="rowgroup">Notas</th>
-          <th rowspan="2" scope="rowgroup">Media</th>
-        </tr>
-        <tr>
-          <th>Nota 1</th>
-          <th>Nota 2</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th rowspan="4" class="branco" scope="colgroup">Exatas</th>
-          <td>Matematica</td>
-          <td>5.0</td>
-          <td>2.5</td>
-          <td>7.5</td>
-        </tr>
-        <tr>
-          <td>Fisica</td>
-          <td>4.0</td>
-          <td>6.0</td>
-          <td>10.0</td>
-        </tr>
-        <tr>
-          <td>Quimica</td>
-          <td>2.4</td>
-          <td>7.3</td>
-          <td>9.7</td>
-        </tr>
-        <tr>
-          <td>Biologia</td>
-          <td>3.8</td>
-          <td>9.1</td>
-          <td>12.9</td>
-        </tr>
-        <tr>
-          <th colspan="4" scope="col">Media de Exatas</th>
-          <td>10.0</td>
-        </tr>
-        <tr>
-          <th rowspan="2" class="branco" scope="colgroup">Humanas</th>
-          <td>Historia</td>
-          <td>5.5</td>
-          <td>3.4</td>
-          <td>8.9</td>
-        </tr>
-        <tr>
-          <td>Geografia</td>
-          <td>10.0</td>
-          <td>9.0</td>
-          <td>19.0</td>
-        </tr>
-        <tr>
-          <th colspan="4" scope="col">Media de Humanas</th>
-          <td>13.95</td>
-        </tr>
-      </tbody>
+      <tr>
+        <th scope="col">Nome</th>
+        <th scope="col">Sexo</th>
+        <th scope="col">Idade</th>
+        <th scope="col">Profissao</th>
+      </tr>
+      <tr>
+        <td>Ana Maria</td>
+        <td>F</td>
+        <td>25</td>
+        <td>Jornalista</td>
+      </tr>
+      <tr>
+        <td>João Pedro</td>
+        <td>M</td>
+        <td>30</td>
+        <td>Engenheiro</td>
+      </tr>
+      <tr>
+        <td>Mariana Souza</td>
+        <td>F</td>
+        <td>27</td>
+        <td>Médica</td>
+      </tr>
+      <tr>
+        <td>Ricardo Lima</td>
+        <td>M</td>
+        <td>35</td>
+        <td>Professor</td>
+      </tr>
+      <tr>
+        <td>Carla Mendes</td>
+        <td>F</td>
+        <td>29</td>
+        <td>Designer</td>
+      </tr>
+      <tr>
+        <td>Felipe Andrade</td>
+        <td>M</td>
+        <td>40</td>
+        <td>Advogado</td>
+      </tr>
+      <tr>
+        <td>Juliana Costa</td>
+        <td>F</td>
+        <td>22</td>
+        <td>Estudante</td>
+      </tr>
+      <tr>
+        <td>Lucas Ferreira</td>
+        <td>M</td>
+        <td>31</td>
+        <td>Programador</td>
+      </tr>
+      <tr>
+        <td>Beatriz Ramos</td>
+        <td>F</td>
+        <td>26</td>
+        <td>Psicóloga</td>
+      </tr>
+      <tr>
+        <td>Fernando Oliveira</td>
+        <td>M</td>
+        <td>37</td>
+        <td>Empresário</td>
+      </tr>
+      <tr>
+        <td>Amanda Silva</td>
+        <td>F</td>
+        <td>33</td>
+        <td>Arquiteta</td>
+      </tr>
     </table>
   </body>
 </html>
