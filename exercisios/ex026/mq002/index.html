@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Query</title>
+
+    <!-- Media types: 
+
+    media="all" - Suitable for all devices.
+    media="screen" - Intended primarily for color computer screens.
+    media="print" - Intended for paged material and for documents viewed on screen in print preview mode. P
+    media="braille" - Intended for braille tactile feedback devices.
+    media="embossed" - Intended for paged braille printers.
+    media="handheld" - Intended for handheld devices (typically small screen, limited bandwidth).
+    media="projection" - Intended for projected presentations, for example projectors.
+    media="speech" - Intended for speech synthesizers. Note: CSS2 had a similar media type called 'aural' for this purpose. See the appendix on aural style sheets for details.
+    media="tty" - Intended for media using a fixed-pitch character grid (such as teletypes, terminals, or portable devices with limited display capabilities). Authors should not use pixel units with the "tty" media type.
+    media="tv" - Intended for television-type devices (low resolution, color, limited-scrollability screens, sound available). 
+
+    Media Features: need to be in betweeen()
+
+    -->
+
+    <link rel="stylesheet" href="estilos/style.css" media="all" />
+    <link
+      rel="stylesheet"
+      href="estilos/retrato.css"
+      media="screen and (orientation: portrait)"
+    />
+    <link
+      rel="stylesheet"
+      href="estilos/paisagem.css"
+      media="screen and (orientation: landscape)"
+    />
+  </head>
+  <body>
+    <h1>Mude a orientacao do seu dispositivo</h1>
+  </body>
+</html>
