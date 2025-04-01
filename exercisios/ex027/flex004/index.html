@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+
+        /*
+
+        Justify-Content (Eixo Principal ou Main axis) & Align-Items (Eixo Transversal ou Transversal Axis) no Flexbox
+
+    ✅ Justify-Content (Alinhamento no Eixo Principal)
+    | Valor            | Comportamento no Eixo Principal |
+    |-----------------|--------------------------------|
+    | flex-start (padrão) | Os itens ficam no **início** do eixo principal |
+    | flex-end       | Os itens ficam no **final** do eixo principal |
+    | center        | Os itens ficam **centralizados** no eixo principal |
+    | space-between | Os itens são **espalhados**, com o primeiro no início e o último no final |
+    | space-around  | Os itens têm **espaço igual ao redor** deles |
+    | space-evenly  | Os itens têm **espaço igual entre si e nas bordas** |
+
+    ✅ Align-Items (Alinhamento no Eixo Cruzado)
+    | Valor        | Comportamento no Eixo Cruzado |
+    |-------------|-----------------------------|
+    | stretch (padrão) | Os itens **se esticam** para preencher o contêiner |
+    | flex-start  | Os itens ficam no **início** do eixo cruzado |
+    | flex-end    | Os itens ficam no **final** do eixo cruzado |
+    | center      | Os itens ficam **centralizados** no eixo cruzado |
+    | baseline    | Os itens são alinhados pela **linha base do texto** |
+
+    💡 Observações:
+    - `justify-content` alinha os itens **horizontalmente** (se `flex-direction: row`) ou **verticalmente** (se `flex-direction: column`).
+    - `align-items` alinha os itens **verticalmente** (se `flex-direction: row`) ou **horizontalmente** (se `flex-direction: column`).
+        
+        */
+
+        .container {
+            background-color: lightcoral;
+            height: 200px;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            align-items: stretch;
+        }
+
+        .item {
+            background-color: lightblue;
+            border: 2px solid black;
+            text-align: center;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        /*
+    🔹 Main Axis & Cross Axis in Flexbox
+
+    | flex-direction  | Main Axis        | Cross Axis       |
+    |----------------|-----------------|-----------------|
+    | row (default)  | Left → Right     | Top → Bottom   |
+    | row-reverse    | Right → Left     | Top → Bottom   |
+    | column         | Top → Bottom     | Left → Right   |
+    | column-reverse | Bottom → Top     | Left → Right   |
+
+    Start & End:
+    - flex-start → Beginning of the main or cross axis.
+    - flex-end → End of the main or cross axis.
+
+
+`---------------------------------------------------------------------
+
+
+🔹 Flex-Wrap Behavior in Flexbox
+
+    | flex-wrap      | Behavior                          | Direction of New Line |
+    |-------------- |-------------------------------- |--------------------- |
+    | nowrap (default) | All items stay in **one line** (may overflow) | No new lines |
+    | wrap          | Items **wrap onto a new line** if needed | New lines go in the **cross-axis direction** |
+    | wrap-reverse  | Items **wrap onto a new line**, but in **reverse** order | New lines go in the **opposite cross-axis direction** |
+
+    Example:
+    - `flex-wrap: wrap;` → Items move to a new row/column if they don’t fit.
+    - `flex-wrap: wrap-reverse;` → Items wrap, but in the opposite direction.
+
+
+
+        */
+
+        .container {
+            background-color: lightcoral;
+
+            display: flex;
+            flex-flow: row wrap-reverse;
+        }
+
+        .item {
+            background-color: lightblue;
+            border: 2px solid black;
+            text-align: center;
+            flex: auto;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">Exemplo de Bloco A</div>
+        <div class="item">Exemplo de Bloco B</div>
+        <div class="item">Exemplo de Bloco C</div>
+        <div class="item">Exemplo de Bloco D</div>
+        <div class="item">Exemplo de Bloco E</div>
+        <div class="item">Exemplo de Bloco F</div>
+        <div class="item">Exemplo de Bloco G</div>
+    </div>
+</body>
+
+</html>
