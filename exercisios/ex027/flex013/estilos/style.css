@@ -18,6 +18,7 @@ header {
     background-color: gray;
     color: white;
     padding: 10px;
+    display: flex;
 } 
 
 header h1 {
@@ -26,6 +27,22 @@ header h1 {
 
 header nav {
     border: 2px solid black;
+}
+
+header nav a {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+header nav a:hover {
+    background-color: white;
+    color: black;
+    transition: background-color .5s;
 }
 
 main {
