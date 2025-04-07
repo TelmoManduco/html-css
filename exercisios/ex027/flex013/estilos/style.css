@@ -25,12 +25,14 @@ header {
 } 
 
 header h1 {
-    border: 2px solid black;
+    /*border: 2px solid black;*/
+    text-align: center;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.368);
     flex: 0 0 200px;
 }
 
 header nav {
-    border: 2px solid black;
+    /*border: 2px solid black;*/
     display: flex;
     flex-flow: row wrap;
 }
@@ -57,4 +59,19 @@ main {
     padding: 10px;
     border-radius: 10px;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.364);
+}
+
+@media screen and (max-width: 570px){
+    header, header > nav {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    header > h1 {
+        flex-basis: 50px;
+    }
+
+    header > nav > a {
+        width: 90vw;
+    }
 }
