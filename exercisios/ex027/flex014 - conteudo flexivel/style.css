@@ -57,10 +57,12 @@ section div.media {
 section div.media img {
     display: block;
     margin: auto;
+    width: 300px;
 }
 
 section div.media iframe {
     display: block;
     margin: auto;
-    padding: 0px 10px;
+    margin-bottom: 50px;
+    width: 90%;
 }
